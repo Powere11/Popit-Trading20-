@@ -74,3 +74,9 @@ Section:NewButton("Buy Angel Eye", "...", function()
     }
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
+Section:NewButton("Buy Banana!", "...", function()
+    local args = {
+    [1] = "Banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
